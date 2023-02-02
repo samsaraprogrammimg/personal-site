@@ -1,16 +1,18 @@
+html{
+  /* overflow-x: hidden; */
+}
+
 body {
   margin: 0;
   text-align: center;
   font-family: 'Merriweather', serif;
   /* background-color: #FFEFD6; */
-  font-size: 1.15rem;
+  font-size: 1rem;
+  font-weight: 400;
+  /* overflow-x: hidden; */
 }
 
-@media (max-width:997px){
-  body{
-    font-size:1.75rem;
-  }
-}
+
 
 h1 {
   margin: 50px auto 0 auto;
@@ -50,9 +52,13 @@ li{
   line-height: 2;
 }
 
-.nav-bar{
+.navbar{
   background-color: #66BFBF;
-  padding: 40px;
+  padding: 20px;
+}
+
+.nav-item{
+  padding-bottom:10px;
 }
 
 .menu-links{
@@ -110,11 +116,28 @@ li{
 }
 
 .mountain {
-  position: relative;
+  position: relative;;
+}
+
+@media(max-width:991px){
+  .top-cloud{
+    display: none;
+  }
+  .bottom-cloud{
+    display: none;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  .mountain {
+    width: 70%;
+  }
 }
 
 .skill-row {
-  width: 50%;
+  width: 60%;
   margin: 100px auto 100px auto;
   text-align: left;
   overflow: auto;
@@ -135,7 +158,7 @@ li{
 
 .intro-summary{
   color: #40514E;
-  width: 30%;
+  width: 60%;
   margin: auto;
 }
 
