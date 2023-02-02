@@ -158,9 +158,11 @@ li{
 
 .intro-summary{
   color: #40514E;
-  width: 60%;
+  width: 30%;
   margin: auto;
 }
+
+
 
 .bottom-container {
   background-color: #66BFBF;
@@ -215,4 +217,14 @@ li{
   background-image: -o-linear-gradient(top, #30E3CB, #2BC4AD);
   background-image: linear-gradient(to bottom, #30E3CB, #2BC4AD);
   text-decoration: none;
+}
+
+@media(max-width:997px){
+  .intro-summary{
+    width: 60%;
+  }
+
+  .contact-message{
+    width: 60%;
+  }
 }
