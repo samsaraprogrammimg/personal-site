@@ -1,19 +1,15 @@
 body {
   margin: 0;
   text-align: center;
-  font-family: 'Merriweather', sans-serif;
-  font-size:1.15rem;
+  font-family: 'Merriweather', serif;
+  /* background-color: #FFEFD6; */
+  font-size: 1.15rem;
 }
 
-
-p {
-  margin-bottom: .5em;
-  line-height: 2;
-}
-
-hr {
-  background-color: #111111;
-  height: 1px;
+@media (max-width:997px){
+  body{
+    font-size:1.75rem;
+  }
 }
 
 h1 {
@@ -30,20 +26,37 @@ h2 {
   color: #66BFBF;
   font-weight: normal;
   padding-bottom: 10px;
-  margin: 20px auto 0;
 }
 
 h3 {
-  color: #1746A2;
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
 }
 
-.nav-bar {
+hr{
+  margin: 80px auto 80px auto;
+  border-style: dotted none none;
+  border-width: .5rem;
+  width: 80px;
+  color: #EAF6F6;
+}
+
+p{
+  line-height: 2;
+  font-family: 'Merriweather', serif;
+}
+
+li{
+  line-height: 2;
+}
+
+.nav-bar{
   background-color: #66BFBF;
   padding: 40px;
 }
 
-.menu-links {
-  color: #EAF6F6;
+.menu-links{
+  color: #FFFF;
   font-size: 1.25rem;
   padding: 0 40px;
   position: relative;
@@ -51,142 +64,78 @@ h3 {
   text-decoration: none;
 }
 
-.menu-links:hover {
+.menu-links:hover{
   color: #111111;
+  /* top: 10px; */
 }
+
+.important{
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+}
+
 
 .top-container {
-  background-color: #FFEFD6;
   position: relative;
-  padding: 2.5% 0;
+  padding-top: 100px;
+  background-color: #FFEFD6;
 }
 
-.personal {
-  width: 300px;
-  margin: auto;
-  display: block;
-  padding: 7.5% 0;
+.middle-container{
+  margin: 100px 0;
+
 }
 
-.top-container h1 {
-  text-align: center;
-  line-height: 1.25;
-  margin: 0;
+
+.bottom-container{
+  background-color:#66BFBF;
+  padding: 50px 0 20px;
+
 }
 
-.intro-container {
-  width: 75%;
-  margin: auto;
+.pro {
+  text-decoration: underline;
+}
+
+.bottom-cloud {
+  position: absolute;
+  bottom: 300px;
+  left: 250px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+
+.mountain {
+  position: relative;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
   text-align: left;
   overflow: auto;
 }
 
-.intro-row{
-  margin: 5%;
+.design-project {
+  width: 35%;
+  float: left;
+  margin-right: 30px;
 }
 
+.programming {
+  width: 35%;
+  float: right;
+  margin-left: 30px;
 
-
-.heading-info {
-  margin: auto;
 }
 
-.portrait-photo:hover {
-  -moz-transform: scale(1.10);
-  -webkit-transform: scale(1.10);
-  -o-transform: scale(1.10);
-  -ms-transform: scale(1.10);
-  -webkit-transform: scale(1.10);
-  transform: scale(1.10);
-  -webkit-transition: transform 1.25s ease-in-out;
-  -moz-transition: transform 1.25s ease-in-out;
-  -ms-transition: transform 1.25s ease-in-out;
-}
-
-.accordion {
-  width: 75%;
-  margin: auto;
-  text-align: left;
-  padding: 5% 0;
-}
-
-.accordion-header {
-  margin: 0;
-  padding: 0.5%;
-}
-
-.accordion-button {
-  color: #FFFF;
-  background-color: #66BFBF;
-  font-size:2rem;
-}
-
-.dtcc-logo{
-  width: 100%;
-}
-
-.image-logo-container{
-  margin: auto;
-}
-
-.education {
-  width: 40%;
-  text-align: left;
-  display: inline-block;
-}
-
-.education-body {
-  text-align: left;
-}
-
-.texas-state-logo{
-  width:100%;
-}
-
-.work-body {
-  text-align: left;
-}
-
-.work-experience {
-  width: 40%;
-  vertical-align: top;
-  text-align: left;
-  display: inline-block;
-}
-
-.education-items {
-  width: 50%;
-  line-height: 2;
-}
-
-.work-items {
-  width: 100%;
-  line-height: 2;
-}
-
-.carousel-container{
-  padding: 2.5% 0;
-}
-
-.carousel-container>h2{
-  font-family: "Montserrat", sans-serif;
-  padding-bottom: 5%;
-}
-
-.carousel-control-prev-icon{
-  background-color: #66BFBF;
-}
-
-.carousel-control-next-icon{
-  background-color: #66BFBF;
-}
-
-.carousel-container button{
-  opacity: 1;
-}
-
-.carousel-inner{
-  width: 80%;
+.intro-summary{
+  color: #40514E;
+  width: 30%;
   margin: auto;
 }
 
@@ -213,8 +162,34 @@ h3 {
   margin: 0;
 }
 
-@media (max-width:997px){
-  body{
-    font-size:1.75rem;
-  }
+.contact-message{
+  width: 40%;
+  margin: 40px auto 60px;
+}
+
+.btn {
+  background: #11CDD4;
+  background-image: -webkit-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -moz-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -ms-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -o-linear-gradient(top, #11CDD4, #11999E);
+  background-image: linear-gradient(to bottom, #11CDD4, #11999E);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30E3CB;
+  background-image: -webkit-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -moz-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -ms-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -o-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: linear-gradient(to bottom, #30E3CB, #2BC4AD);
+  text-decoration: none;
 }
