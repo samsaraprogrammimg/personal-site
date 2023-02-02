@@ -8,7 +8,7 @@ body {
 
 @media (max-width:997px){
   body{
-    font-size:1.40rem;
+    font-size:1.75rem;
   }
 }
 
@@ -135,8 +135,9 @@ li{
 
 .intro-summary{
   color: #40514E;
-  width: 30%;
+  width: 50%;
   margin: auto;
+  text-align:center;
 }
 
 .bottom-container {
