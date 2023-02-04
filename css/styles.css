@@ -1,15 +1,9 @@
-html{
-  /* overflow-x: hidden; */
-}
-
 body {
   margin: 0;
   text-align: center;
   font-family: 'Merriweather', serif;
-  /* background-color: #FFEFD6; */
   font-size: 1rem;
   font-weight: 400;
-  /* overflow-x: hidden; */
 }
 
 
@@ -36,11 +30,11 @@ h3 {
 }
 
 hr{
-  margin: 80px auto 80px auto;
+  margin: 5% auto;
   border-style: dotted none none;
   border-width: .5rem;
   width: 80px;
-  color: #EAF6F6;
+  color: #66BFBF;
 }
 
 p{
@@ -87,12 +81,6 @@ li{
   background-color: #FFEFD6;
 }
 
-.middle-container{
-  margin: 100px 0;
-
-}
-
-
 .bottom-container{
   background-color:#66BFBF;
   padding: 50px 0 20px;
@@ -136,9 +124,18 @@ li{
   }
 }
 
+.profile>h2{
+  padding-top: 3%;
+}
+
+.middle-container{
+  margin: 5% 0;
+
+}
+
 .skill-row {
   width: 60%;
-  margin: 100px auto 100px auto;
+  margin: 2.5% auto;
   text-align: left;
   overflow: auto;
 }
