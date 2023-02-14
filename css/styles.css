@@ -124,6 +124,18 @@ li{
   }
 }
 
+.self:hover {
+  -moz-transform: scale(1.10);
+  -webkit-transform: scale(1.10);
+  -o-transform: scale(1.10);
+  -ms-transform: scale(1.10);
+  -webkit-transform: scale(1.10);
+  transform: scale(1.10);
+  -webkit-transition: transform 1.25s ease-in-out;
+  -moz-transition: transform 1.25s ease-in-out;
+  -ms-transition: transform 1.25s ease-in-out;
+}
+
 .profile>h2{
   padding-top: 3%;
 }
